@@ -1,7 +1,6 @@
 # -----------------------------
 # 1. IMPORTS
 # -----------------------------
-# from random import randint, randrange
 from datetime import date
 
 from repository import save_daily_record
@@ -42,7 +41,6 @@ def calc_user_cml(user_weight, user_act_factor):
     bmr = user_weight * 24.2  # Basal Metabolic Rate (in kcal/day)
     return round(bmr * user_act_factor, 2)  # Calorie Maintenance Level (in kcal/day)
 
-
 def input_weight_fail_proof():
     while True:
         try:
@@ -53,7 +51,6 @@ def input_weight_fail_proof():
         except ValueError:
             # If an error occurs (like typing text instead of a float)
             print("You need to type a whole or decimal number. Try again.")
-
 
 def input_sex_fail_proof():
     while True:
@@ -76,7 +73,6 @@ def build_todays_record(user):
 def todays_date_str():
     """Build a string representation of the current date."""
     return date.today().strftime("%d-%m-%Y")
-
 
 def save_todays_user_record(user):
     """Service API: calculate today's record, then ask the repository to save it."""
@@ -109,10 +105,6 @@ def add_user(name, weight, reference):
     }
     users.append(user)
     return user
-
-
-
-
 
 # -----------------------------
 # 4. MAIN PROGRAM (console version - barred for GUI app)
