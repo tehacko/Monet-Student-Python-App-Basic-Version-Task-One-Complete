@@ -177,29 +177,5 @@ def save_todays_user_record(user):
 # 4. MAIN PROGRAM (console version - barred for GUI app)
 # -----------------------------
 """
-def main():
-    while True:
-        print(
-            "What do you want to do? "
-            "1 Register a new user "
-            "2 Print my stats "
-            "3 Exit"
-        )
-        choice = input()
-        if choice == "1":
-            save_user_record()
-        elif choice == "2":
-            print_whole_usernames_top_down()
-            print_my_stats()
-        elif choice == "3":
-            break
-        else:
-            print("Invalid choice. You must type 1-3. Please try again.")
-
-    # generate_a_squat_challenge()
-    # print_username_letters_top_down()
-    # print_whole_usernames_top_down()
-
-if __name__ == "__main__":
-    main()
+no longer here, moved to main.py
 """
