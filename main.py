@@ -1,4 +1,4 @@
-"""Application entry point (minimum CML version)."""
+"""Application entry point"""
 
 from frontend_controller import run
 
